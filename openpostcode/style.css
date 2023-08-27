@@ -81,6 +81,26 @@
   display: flex;
   align-items: center;
   gap: 0.4rem;
+  cursor: pointer;
+  position: relative;
+}
+.dropdown {
+  display: none;
+  position: absolute;
+  z-index: 10;
+  top: 1.9rem;
+}
+.post--nav li:hover .dropdown {
+  display: block;
+}
+
+.post--nav li:hover .dropdown li {
+  list-style: none;
+  color: white;
+  padding: 0.8rem 0.4rem;
+  width: 7.5rem;
+  font-size: 0.8rem;
+  background: linear-gradient(to bottom, #bfd255 0%, #8eb92a 45%, #72aa00 100%);
 }
 
 .post--nav li:last-of-type {
@@ -228,11 +248,46 @@ section {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  margin-bottom: -0.5rem;
 }
 
 .popular p {
   font-size: 2.2rem;
   margin: 0.3rem 0rem;
+}
+
+.all--posts {
+  display: flex;
+  gap: 0.7rem;
+  align-items: end;
+  padding: 0rem 0.5rem;
+  flex-wrap: wrap;
+}
+.large--size {
+  font-size: 1.7rem;
+}
+.medium--size {
+  font-size: 1.1rem;
+  padding: 0rem !important;
+}
+
+.small--size {
+  font-size: 1rem;
+  padding: 0rem !important;
+}
+.default--size {
+  font-family: "Open Sans", sans-serif;
+  list-style: none;
+  padding: 8px 0rem;
+  color: #008cba;
+  background-color: #dddddd;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.default--size:hover {
+  background-color: #008cba;
+  color: #dddddd;
 }
 
 /* CheckMyPostcode  section  */

@@ -6,6 +6,7 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
     <title>Check My Postcode</title>
+    <script src="./index.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -19,22 +20,34 @@
             placeholder="Postcode or place name"
           />
           <input type="submit" value="Search" />
-          <!-- <button>Search</button> -->
         </form>
         <ul class="post--nav">
           <li>
             <a href="">Postcode Lists</a>
             <img src="images/icons8-down-64.png" alt="" />
+            <ul class="dropdown">
+              <li>By County</li>
+              <li>By Introduction Date</li>
+            </ul>
           </li>
           <li>
             <a href="">Postcode Maps</a>
             <img src="images/icons8-down-64.png" alt="" />
+            <ul class="dropdown">
+              <li>User Type</li>
+              <li>User Category</li>
+              <li>Council Tax Band</li>
+            </ul>
           </li>
           <li><a href="">Nearest Postcodes</a></li>
           <li><a href="">Postcode Lottery</a></li>
           <li>
             <a href="">Help and Information</a>
             <img src="images/icons8-down-64.png" alt="" />
+            <ul class="dropdown">
+              <li>About this website</li>
+              <li>Privacy Policy</li>
+            </ul>
           </li>
         </ul>
       </nav>
@@ -111,6 +124,7 @@
 
     <section class="popular">
       <p>Popular Postcodes</p>
+      <ul class="all--posts"></ul>
     </section>
     <section class="CheckMyPostcode">
       <p>
