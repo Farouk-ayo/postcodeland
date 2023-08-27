@@ -2,6 +2,8 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  color: #222222;
 }
 
 .header {
@@ -63,6 +65,9 @@
   color: #ffffff;
   transition: background-color 300ms ease-out;
 }
+.nav form input:nth-of-type(2):hover {
+  background-color: #007095;
+}
 
 .post--nav {
   display: flex;
@@ -73,7 +78,6 @@
 
 .post--nav li {
   list-style: none;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   display: flex;
   align-items: center;
   gap: 0.4rem;
@@ -95,4 +99,208 @@
 .post--nav li img {
   width: 0.8rem;
   height: 0.8rem;
+}
+
+section {
+  margin: 0.5rem 12rem;
+}
+
+/* main section  */
+.main {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.main p {
+  font-size: 2.5rem;
+  margin: 0.3rem 0rem;
+}
+
+.postcode--form {
+  display: flex;
+  flex-direction: column;
+  border-style: solid;
+  border-width: 2px;
+  border-color: orange;
+  padding: 1.25rem 2rem 2.5rem 1.25rem;
+  background: #ffcc99;
+  border-radius: 10px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.postcode--form form {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  align-items: start;
+}
+
+.postcode--form form input:nth-of-type(1) {
+  border: none;
+  border-radius: none;
+  padding: 0.5rem;
+  width: 12rem;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #cccccc;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.75);
+  font-size: 0.875rem;
+  width: 88%;
+  font-size: 0.9rem;
+}
+.postcode--form form input:nth-of-type(1)::placeholder {
+  color: #8f8e8efd;
+  font-weight: 500;
+}
+.postcode--form form input:nth-of-type(1):focus {
+  background: #fafafa;
+  border-color: #999999;
+  outline: none;
+}
+
+.postcode--form form input:nth-of-type(2) {
+  width: 12%;
+  padding: 1rem 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  font-size: 1rem;
+  background-color: #008cba;
+  border-color: #007095;
+  color: #ffffff;
+  transition: background-color 300ms ease-out;
+}
+
+.postcode--form form input:nth-of-type(2):hover {
+  background-color: #007095;
+}
+
+.geo {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  position: relative;
+  left: 3rem;
+}
+
+.geo p {
+  font-size: 1.2rem;
+  font-weight: lighter;
+  color: #333333;
+}
+
+.geo button {
+  padding: 1rem 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  font-size: 1rem;
+  background-color: #008cba;
+  border-color: #007095;
+  color: #ffffff;
+  transition: background-color 300ms ease-out;
+}
+
+.geo button:hover {
+  background-color: #007095;
+}
+
+.booking {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  text-decoration: underline;
+  text-decoration-color: #222222;
+  color: #008cba;
+  font-size: 1.1rem;
+}
+
+/* popular section  */
+.popular {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.popular p {
+  font-size: 2.2rem;
+  margin: 0.3rem 0rem;
+}
+
+/* CheckMyPostcode  section  */
+.CheckMyPostcode {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #d8d8d8;
+  margin-bottom: 1.25rem;
+  padding: 1.25rem;
+  background: #f2f2f2;
+  color: #333333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.CheckMyPostcode p {
+  font-family: inherit;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+  text-rendering: optimizeLegibility;
+}
+
+.CheckMyPostcode p span {
+  font-weight: 700;
+  color: #333333;
+}
+
+.footer {
+  background-color: #333333;
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  justify-content: space-between;
+  align-items: start;
+  padding: 1rem 12rem;
+  margin: 0 !important;
+}
+
+.footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem 0rem;
+}
+
+.footer ul li {
+  list-style: none;
+  font-size: 0.9rem;
+  color: #ffffff;
+}
+
+.attr {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  padding: 1rem 0rem;
+}
+.attr p {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.attr p a {
+  text-decoration: none;
+  color: #008cba;
 }
