@@ -122,7 +122,7 @@
 }
 
 section {
-  margin: 0.5rem 12rem;
+  margin: 0.5rem 10rem;
 }
 
 /* main section  */
@@ -243,6 +243,17 @@ section {
   font-size: 1.1rem;
 }
 
+/* ads section  */
+.ads {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ads img {
+  margin: auto;
+  cursor: not-allowed;
+  user-select: none;
+}
 /* popular section  */
 .popular {
   display: flex;
