@@ -74,6 +74,7 @@
   align-items: center;
   gap: 1.2rem;
   width: 100%;
+  flex-wrap: wrap;
 }
 
 .post--nav li {
@@ -84,6 +85,7 @@
   cursor: pointer;
   position: relative;
 }
+
 .dropdown {
   display: none;
   position: absolute;
@@ -107,7 +109,12 @@
   margin-left: auto;
   margin-right: 1rem;
 }
-
+@media (max-width: 900px) {
+  .post--nav li:last-of-type {
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+}
 .post--nav li a {
   text-decoration: none;
   color: #ffffff;
@@ -121,10 +128,40 @@
   height: 0.8rem;
 }
 
+.menu {
+  display: none;
+}
+.menu p {
+  text-transform: capitalize;
+  font-size: 1rem;
+  color: white;
+  display: inline;
+}
+
+@media (max-width: 674px) {
+  .menu {
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: end;
+    gap: 0.5rem;
+    margin-left: auto;
+    padding: 0.8rem 1rem;
+  }
+  .nav {
+    display: none;
+  }
+}
+
 section {
   margin: 0.5rem 10rem;
 }
 
+@media (max-width: 1200px) {
+  section {
+    margin: 0.5rem 1rem;
+  }
+}
 /* main section  */
 .main {
   background-color: white;
@@ -157,6 +194,7 @@ section {
   display: flex;
   gap: 1rem;
   align-items: start;
+  flex-wrap: wrap;
 }
 
 .postcode--form form input:nth-of-type(1) {
@@ -207,6 +245,7 @@ section {
   gap: 2rem;
   position: relative;
   left: 3rem;
+  flex-wrap: wrap;
 }
 
 .geo p {
@@ -248,12 +287,15 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 .ads img {
-  margin: auto;
+  margin-left: auto;
   cursor: not-allowed;
   user-select: none;
+  width: 80%;
 }
+
 /* popular section  */
 .popular {
   display: flex;
@@ -318,6 +360,7 @@ section {
 
 .CheckMyPostcode p {
   font-family: inherit;
+  text-align: center;
   font-weight: normal;
   font-size: 1rem;
   line-height: 1.5;
@@ -337,13 +380,19 @@ section {
   width: 100%;
   justify-content: space-between;
   align-items: start;
+  flex-wrap: wrap;
   padding: 1rem 12rem;
   margin: 0 !important;
 }
-
+@media (max-width: 674px) {
+  .footer {
+    padding: 1rem 1rem;
+  }
+}
 .footer ul {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   gap: 0.5rem;
   padding: 1rem 0rem;
 }
