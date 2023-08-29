@@ -37,12 +37,21 @@ body {
   align-items: center;
   width: 100%;
 }
-.nav form {
+
+.nav--mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background: linear-gradient(to bottom, #bfd255 0%, #8eb92a 45%, #72aa00 100%);
+}
+.search--form {
   display: flex;
   align-items: center;
+  padding: 0.5rem;
 }
 
-.nav form input:nth-of-type(1) {
+.search--form input:nth-of-type(1) {
   border: none;
   border-radius: none;
   padding: 0.3rem;
@@ -55,13 +64,13 @@ body {
   font-size: 0.875rem;
 }
 
-.nav form input:nth-of-type(1):focus {
+.search--form input:nth-of-type(1):focus {
   background: #fafafa;
   border-color: #999999;
   outline: none;
 }
 
-.nav form input:nth-of-type(2) {
+.search--form input:nth-of-type(2) {
   cursor: pointer;
   text-decoration: none;
   text-align: center;
@@ -75,7 +84,7 @@ body {
   color: #ffffff;
   transition: background-color 300ms ease-out;
 }
-.nav form input:nth-of-type(2):hover {
+.search--form input:nth-of-type(2):hover {
   background-color: #007095;
 }
 
@@ -86,7 +95,13 @@ body {
   width: 100%;
   flex-wrap: wrap;
 }
-
+.post--nav--mobile {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  background: linear-gradient(to bottom, #bfd255 0%, #8eb92a 45%, #72aa00 100%);
+}
 .post--nav li {
   list-style: none;
   display: flex;
@@ -95,7 +110,17 @@ body {
   cursor: pointer;
   position: relative;
 }
-
+.post--nav--mobile li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  cursor: pointer;
+  position: relative;
+  padding: 0.8rem 1rem;
+  background: linear-gradient(to bottom, #bfd255 0%, #8eb92a 45%, #72aa00 100%);
+}
 .dropdown {
   display: none;
   position: absolute;
@@ -106,7 +131,18 @@ body {
   display: block;
 }
 
+.post--nav--mobile li:hover .dropdown {
+  display: block;
+}
 .post--nav li:hover .dropdown li {
+  list-style: none;
+  color: white;
+  padding: 0.8rem 0.4rem;
+  width: 7.5rem;
+  font-size: 0.8rem;
+  background: linear-gradient(to bottom, #bfd255 0%, #8eb92a 45%, #72aa00 100%);
+}
+.post--nav--mobile li:hover .dropdown li {
   list-style: none;
   color: white;
   padding: 0.8rem 0.4rem;
@@ -132,14 +168,26 @@ body {
   font-weight: 500;
   font-size: 0.8rem;
 }
+.post--nav--mobile li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: 500;
+  font-size: 0.8rem;
+}
 
 .post--nav li img {
   width: 0.8rem;
   height: 0.8rem;
 }
 
+.post--nav--mobile li img {
+  width: 0.8rem;
+  height: 0.8rem;
+}
 .menu {
   display: none;
+  cursor: pointer;
 }
 .menu p {
   text-transform: uppercase;
