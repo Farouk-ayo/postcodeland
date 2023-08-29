@@ -187,6 +187,7 @@ body {
 .post--nav--mobile li img {
   width: 0.8rem;
   height: 0.8rem;
+  transform: rotate(270deg);
 }
 .menu {
   display: none;
