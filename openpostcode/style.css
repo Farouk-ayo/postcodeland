@@ -39,11 +39,14 @@ body {
 }
 
 .nav--mobile {
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   width: 100%;
   background: linear-gradient(to bottom, #bfd255 0%, #8eb92a 45%, #72aa00 100%);
+}
+.displayMenu {
+  display: flex !important;
 }
 .search--form {
   display: flex;
@@ -55,7 +58,7 @@ body {
   border: none;
   border-radius: none;
   padding: 0.3rem;
-  width: 12rem;
+  width: 100%;
   border-style: solid;
   border-width: 1px;
   border-color: #cccccc;
