@@ -11,7 +11,7 @@ const Accordion = ({ title, content }) => {
   };
 
   return (
-    <div className={classes.accordion}>
+    <div className={`${classes.accordion} ${isOpen ? classes.open : ''}`}>
       <div className={classes.accordionHeader} onClick={toggleAccordion}>
         <p>{title}</p>
         {isOpen ? <IoIosArrowDown /> : <IoIosArrowForward />}

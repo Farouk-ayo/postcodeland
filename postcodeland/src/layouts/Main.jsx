@@ -9,7 +9,7 @@ import { AiOutlineCheckCircle } from "react-icons/ai";
 const Main = () => {
   return (
     <setion className={`${classes.marginTop} ${classes.main}`}>
-      <img src={group} alt="" />
+      <img src={group} className={classes.group} alt="" />
       <div className={classes.popular}>
         <span className={classes.popularTitle}>
           <h4>Popular Postcode</h4>
