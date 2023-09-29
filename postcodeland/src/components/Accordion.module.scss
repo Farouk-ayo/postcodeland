@@ -1,0 +1,33 @@
+.accordion {
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  text-decoration: none;
+}
+
+.accordionHeader {
+  color: #756f6c;
+  background: #fff;
+  padding: 1rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  p {
+    color: #756f6c;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  &:hover {
+    color: #00759b;
+  }
+}
+
+.accordionContent {
+  display: block;
+  padding: 10px;
+  transition: all 0.8s;
+  p {
+    font-size: 0.7rem;
+    color: #53504e;
+  }
+}
